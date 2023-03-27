@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        header {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Box Model</h1>
+    </header>
+    <nav>
+        Inicio, Tema Seleccionado, Mockup, Acerca de
+        <ul>
+            <li><a href="#Inicio">Inicio </a></li>
+            <li><a href="#TemaSeleccionado">Tema Seleccionado </a></li>
+            <li><a href="#Mockup">Mockup </a></li>
+            <li><a href="#Acercade">Acerca de </a></li>
+        </ul>
+
+    </nav>
+    <a name="Inicio"></a>
+    <section>
+        <h2> Cajas en Bloque y en Línea:</h2>
+        <p> Todo en CSS tiene una caja alrededor, y comprender estas cajas es clave para poder crear diseños con CSS o
+            para alinear todos los elementos.
+            En CSS, en general, hay dos tipos de cajas: cajas en bloque y cajas en línea. Estas características se
+            refieren al modo cómo se comporta la caja en términos de flujo de página y en relación con otras cajas de la
+            página; Si una caja se define como un bloque, se comportará de las maneras siguientes:
+            La caja fuerza un salto de línea al llegar al final de la línea.
+            La caja se extenderá en la dirección de la línea para llenar todo el espacio disponible que haya en su
+            contenedor. En la mayoría de los casos, esto significa que la caja será tan ancha como su contenedor, y
+            llenará el 100% del espacio disponible.
+            Se respetan las propiedades width y height.
+            El relleno, el margen y el borde mantienen a los otros elementos alejados de la caja.
+            A menos que decidamos cambiar el tipo de visualización a en línea, elementos como los encabezados por
+            ejemplo, h1 y todos los elementos p usan por defecto Block como tipo de visualización externa.
+            Si una caja tiene una visualización externa de tipo inline, entonces:
+            La caja no fuerza ningún salto de línea al llegar al final de la línea.
+            Las propiedades width y height no se aplican.
+            Se aplican relleno, margen y bordes verticales, pero no mantienen alejadas otras cajas en línea.
+            Se aplican relleno, margen y bordes horizontales, y mantienen alejadas otras cajas en línea.
+            El elemento a que se utiliza para los enlaces, y los elementos span, em, y strong son ejemplo de los
+            elementos que se muestrsan en línea por defecto. El tipo de caja que se aplica a un elemento está definido
+            por los valores de propiedad display, como block y inline, y se relaciona con el valor externo (outer) de
+            visualización (display).
+        </p>
+
+    </section>
+    <hr>
+
+
+    <section id="TemaSeleccionado">
+        <h3> TIPOS DE VISUALIZACION INTERNA Y EXTERNA</h3>
+        <p>Como se mencionó anteriormente, las cajas en CSS tienen un tipo de visualización externa, que define si se
+            trata de una caja en bloque o en línea.
+            Sin embargo, las cajas también tienen un tipo de visualización interna, que determina cómo se disponen los
+            elementos dentro de esa caja. De forma predeterminada, los elementos dentro de una caja se presentan en
+            flujo normal, lo que significa que se comportan como otros elementos de tipo en bloque o en línea (como se
+            explicó anteriormente).
+            Sin embargo, podemos cambiar el tipo de visualización interna utilizando valores de display, como flex. Si
+            en un elemento establecemos display, flex, el tipo de visualización externa es de tipo bloque (block), pero
+            el tipo de visualización interna cambia a flexible (flex). Cualquier elemento que sea hijo directo de esta
+            caja pasará a comportarse como un elemento de tipo flex, de acuerdo con las reglas que se establecen en la
+            especificación de Flexbox, tema que veremos más adelante.
+            A medida que vayas aprendiendo más detalles sobre el diseño CSS, te irás encontrando con el valor flex y con
+            otros valores internos que puedan presentar tus cajas, por ejemplo, grid.
+            Sin embargo, la disposición en bloque y en línea es la forma predeterminada cómo se comportan las cosas en
+            la web; como ya dijimos, a veces esto se conoce como flujo normal, porque nuestras cajas se dispondrán en
+            bloque o en línea, si no reciben ninguna otra instrucción.
+            El modelo de cajas CSS completo se aplica a cajas que presentan comportamiento en bloque; las cajas con
+            comportamiento en línea solo usan una parte del comportamiento definido en el modelo de cajas. El modelo
+            define cómo funcionan juntas las diferentes partes de una caja (margen, borde, relleno y contenido) para
+            crear una caja que puedas ver en tu página. Para complicarlo un poco más, hay un modelo de cajas estándar y
+            un modelo de cajas alternativo.
+
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h3> PARTES DE UNA CAJA </h3>
+        <p>Al hacer una caja de tipo bloque en CSS tenemos los elementos siguientes:
+            • El contenido de la caja (o content box): El área donde se muestra el contenido, cuyo tamaño puede
+            cambiarse utilizando propiedades como width y height.
+            • El relleno de la caja (o padding box): El relleno es espacio en blanco alrededor del contenido; es posible
+            controlar su tamaño usando la propiedad padding y otras propiedades relacionadas.
+            • El borde de la caja (o border box): El borde de la caja envuelve el contenido y el de relleno. Es posible
+            controlar su tamaño y estilo utilizando la propiedad border y otras propiedades relacionadas.
+            • El margen de la caja (o margin box): El margen es la capa más externa. Envuelve el contenido, el relleno y
+            el borde como espacio en blanco entre la caja y otros elementos. Es posible controlar su tamaño usando la
+            propiedad margin y otras propiedades relacionadas.
+
+
+        </p>
+    </section>
+    <hr>
+    <a name="Mockup"></a>
+    <section>
+        <h3> Mockup Página </h3>
+
+        <img src="C:\Users\jafer\Videos\Proyecto Web23\boxJafer.drawio.png" alt="">
+    </section>
+
+    <hr>
+    <a name="Acercade"></a>
+
+    <section>
+
+        <h3> Acerca de </h3>
+        <h5> Elaborado por: Javier Fernando Niño Ortiz </h5>
+        <h5> Correo: jafer7705@gmail.com </h5>
+        <h5> Skype: jafer1205 </h5>
+        <h5> Contacto: 3212030293 </h5>
+        <h5> Cead Chiquinquirá </h5>
+        <h5> Programa Ingeniería de Sistemas </h5>
+        <h5> Grupo: 301122_14 </h5>
+        <h5> Presentado al Tutor Mario Luis Ávila Pérez </h5>
+
+    </section>
+    <hr>
+    <footer>
+        <p> Esta actividad fue realizada por Javier Fernando Niño Ortiz </p>
+        <p> En cumplimiento de la Fase 2 del Curso Diseños de Sitios Web </p>
+        <p> Curso: 301122_1391 </p>
+        <p> Actualización: 26 de Marzo del 2023 </p>
+    </footer>
+</body>
+
+</html>
